@@ -1,0 +1,114 @@
+thead tr {
+	background-color: #b3b3ff;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #e6e6e6;
+}
+
+/* black table border */
+/*
+.table {
+	border: 0.5px solid #000000;
+} */
+.table-bordered,.table-bordered>thead>tr>th,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>td
+	{
+	border: 0.5px solid #000000;
+}
+
+.table-borderless>thead>tr>th,.table-borderless>tbody>tr>th,.table-borderless>tfoot>tr>th,.table-borderless>thead>tr>td,.table-borderless>tbody>tr>td,.table-borderless>tfoot>tr>td
+	{
+	border: 0px;
+}
+
+/* mark highlighted text */
+mark {
+	background-color: yellow;
+	color: black;
+}
+
+/* Info Panel */
+.panel-info {
+	background-color: light-grey;
+	border: 2px solid red;
+	padding: 0.5px;
+	width: 500px;
+}
+
+.panel-info>.panel-heading {
+	background-image: none;
+	background-color: grey;
+	color: red;
+	font-weight: bold;
+}
+
+.main-container-large {
+	margin-left: 50px;
+	width: 1024px;
+}
+
+.main-container-medium {
+	margin-left: 50px;
+	width: 700px;
+}
+
+.col-label {
+	width: 100px;
+}
+
+.col-value {
+	width: 200px;
+}
+
+.floating-box {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.floating-box-bottom {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 10px;
+}
+
+.float-container {
+	width: 100%;
+}
+
+.float-right-align {
+	float: right;
+	border: 1px solid;
+	margin: 0px;
+	padding: 10px;
+}
+
+.pagination {
+	margin: 0px;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.border-top {
+	border-top: 1px solid;
+}
+
+.blue-table-div>.table-borderless>tbody>tr {
+	background-color: #cce6ff;
+}
+
+.link-disabled {
+	color: grey;
+}
+
+.txn-hist-hdr {
+	width: 150px;
+	background-color: #cce6ff;
+	font-weight: bold; 
+}
+
+.txn-hist-val {
+	width: 200px;
+}

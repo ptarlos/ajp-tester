@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AJP Tester</title>
+<!-- needed for IE11 to work in Compatibility Mode -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/custom.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="main-container-medium">
+		<h2>AJP Tester</h2>
+		<div>
+			<p>The purpose of this web application is to test servers via the
+				AJP protocol. The Apache Tomcat Connectors (AJP) protocol is
+				typically used between Apache LB and Tomcat (Java) servers.</p>
+			<h3>Commands:</h3>
+			<!-- AJP CPing panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<strong>AJP CPing</strong> - Check that the AJP Server is Up
+				</div>
+				<div class="panel-body">
+					<strong>Syntax:</strong><br />
+					/ajpCPing?ip=<span class="text-success">&lt;ajp.server.ip&gt;</span>&port=<span class="text-success">&lt;ajp.server.port&gt;</span>
+					<ul>
+						<li><span class="text-success">ajp.server.ip</span> = AJP server IP address</li>
+						<li><span class="text-success">ajp.server.port</span> = AJP server port, default is 8009</li>
+					</ul>
+					<strong>Example:</strong><br />
+					http://localhost:9090/ajpCPing?ip=10.10.10.1&port=8009
+				</div>
+			</div>
+			<!-- AJP GET panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<strong>AJP GET</strong> - Send GET message to AJP Server; browse a
+					web-page
+				</div>
+				<div class="panel-body">
+					<strong>Syntax:</strong><br />
+					/ajpGet?ip=<span class="text-success">&lt;ajp.server.ip&gt;</span>&port=<span class="text-success">&lt;ajp.server.port&gt;</span>&query=<span class="text-success">&lt;query.path&gt;</span>
+					<ul>
+						<li><span class="text-success">ajp.server.ip</span> = AJP server IP address</li>
+						<li><span class="text-success">ajp.server.port</span> = AJP server port, default is 8009</li>
+						<li><span class="text-success">query.path</span> = query path on the web server</li>
+					</ul>
+					<strong>Example:</strong><br />
+					http://localhost:9090/ajpGet?ip=10.10.10.1&port=8009&query=/mypage/test
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
