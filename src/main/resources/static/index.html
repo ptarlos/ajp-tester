@@ -28,14 +28,18 @@
 					<strong>AJP CPing</strong> - Check that the AJP Server is Up
 				</div>
 				<div class="panel-body">
-					<strong>Syntax:</strong><br />
-					/ajpCPing?ip=<span class="text-success">&lt;ajp.server.ip&gt;</span>&port=<span class="text-success">&lt;ajp.server.port&gt;</span>
+					<strong>Syntax:</strong><br /> /ajpCPing?ip=<span
+						class="text-success">&lt;ajp.server.ip&gt;</span>&port=<span
+						class="text-success">&lt;ajp.server.port&gt;</span>
 					<ul>
-						<li><span class="text-success">ajp.server.ip</span> = AJP server IP address</li>
-						<li><span class="text-success">ajp.server.port</span> = AJP server port, default is 8009</li>
+						<li><span class="text-success">ajp.server.ip</span> = AJP
+							server IP address</li>
+						<li><span class="text-success">ajp.server.port</span> = AJP
+							server port, default is 8009</li>
 					</ul>
 					<strong>Example:</strong><br />
-					http://localhost:9090/ajpCPing?ip=10.10.10.1&port=8009
+					http://localhost:9090/ajpCPing?ip=10.10.10.1&port=8009<br /> <strong>Description:</strong><br />Send
+					an AJP CPing request to 10.10.10.1:8009
 				</div>
 			</div>
 			<!-- AJP GET panel -->
@@ -45,15 +49,23 @@
 					web-page
 				</div>
 				<div class="panel-body">
-					<strong>Syntax:</strong><br />
-					/ajpGet?ip=<span class="text-success">&lt;ajp.server.ip&gt;</span>&port=<span class="text-success">&lt;ajp.server.port&gt;</span>&query=<span class="text-success">&lt;query.path&gt;</span>
+					<strong>Syntax:</strong><br /> /ajpGet?ip=<span
+						class="text-success">&lt;ajp.server.ip&gt;</span>&port=<span
+						class="text-success">&lt;ajp.server.port&gt;</span>&query=<span
+						class="text-success">&lt;query.path&gt;</span>
 					<ul>
-						<li><span class="text-success">ajp.server.ip</span> = AJP server IP address</li>
-						<li><span class="text-success">ajp.server.port</span> = AJP server port, default is 8009</li>
-						<li><span class="text-success">query.path</span> = query path on the web server</li>
+						<li><span class="text-success">ajp.server.ip</span> = AJP
+							server IP address</li>
+						<li><span class="text-success">ajp.server.port</span> = AJP
+							server port, default is 8009</li>
+						<li><span class="text-success">query.path</span> = query path
+							on the web server</li>
+						<li>HTTP headers are not forwarded to AJP</li>
 					</ul>
 					<strong>Example:</strong><br />
-					http://localhost:9090/ajpGet?ip=10.10.10.1&port=8009&query=/mypage/test
+					http://localhost:9090/ajpGet?ip=10.10.10.1&port=8009&query=/mypage/test<br />
+					<strong>Description:</strong><br />Send an AJP GET request to
+					10.10.10.1:8009//mypage/test
 				</div>
 			</div>
 		</div>
