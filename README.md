@@ -24,16 +24,16 @@ This web-app currently supports 2 methods:
 * Description: Send an AJP GET request to 10.10.10.1:8009//mypage/test
 
 ## How to Download and Run the Web-app with Java
-1. Download the binaries from the latest Releases tag (e.g.: ajp-tester-1.0.0-SNAPSHOT.jar)
+1. Download the binaries from the Releases (e.g.: ajp-tester-1.0.0.jar)
 2. Make sure you have Java installed
 3. Startup scripts are in the ./scripts/ folder.
-4. run "java -jar ./ajp-tester-1.0.0-SNAPSHOT.jar --server.port=9090"
+4. run "java -jar ./ajp-tester-1.0.0.jar --server.port=9090"
 5. This will start the Web-app listening on port 9090.
 6. To see usage page, in Web Browser navigate to "http://localhost:9090"
 
 ## How to Build Project with Maven
 1. Download the Project from Github
 2. Make sure you have Java and Maven installed
-3. run "mvn install" in the root folder - this will create ./target/ajp-tester-1.0.0-SNAPSHOT.jar
+3. run "mvn install" in the root folder
 
 
